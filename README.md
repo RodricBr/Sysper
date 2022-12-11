@@ -1,9 +1,21 @@
-# sysper
-systemd persistence
+<h1 align="center">SySPer</h2>
 
-## - Reseting the persistence
-```console
-$ sudo systemctl daemon-reload
+<h4 align="center"><strong>Systemd (Daemon) Persistence</strong></h4>
+
+<p align="center">
+  <img border="0" src="./sysper" alt="sysper example">
+</p>
+
+<hr>
+
+---
+
+## - Instalation <br>
+
+```bash
+bash <(curl -s "https://github.com/RodricBr/sysper")
 ```
+
+<br>
 
 > Inspiration: https://pberba.github.io/security/2022/01/30/linux-threat-hunting-for-persistence-systemd-timers-cron/
