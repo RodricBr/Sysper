@@ -10,6 +10,8 @@
 
 ## - Instalation <br>
 ```console
+$ curl -fsSL "https://raw.githubusercontent.com/RodricBr/sysper/main/sysper" && chmod +x sysper
+  OR
 $ wget -q "https://raw.githubusercontent.com/RodricBr/sysper/main/sysper" && chmod +x sysper
 $ sudo ./sysper
 ```
