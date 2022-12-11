@@ -11,7 +11,7 @@
 ## - Instalation <br>
 
 ```bash
-bash <(curl -s "https://github.com/RodricBr/sysper")
+bash <(curl -s "https://raw.githubusercontent.com/RodricBr/sysper/main/sysper")
 ```
 
 <br>
