@@ -9,9 +9,17 @@
 <hr>
 
 ## - Instalation <br>
+```console
+$ wget -q "https://raw.githubusercontent.com/RodricBr/sysper/main/sysper" && chmod +x sysper
+$ sudo ./sysper
+```
 
-```bash
-bash <(curl -s "https://raw.githubusercontent.com/RodricBr/sysper/main/sysper")
+## - Reseting <br>
+```console
+$ sudo rm /etc/systemd/system/sysper.service
+$ sudo systemctl daemon-reload
+
+$ systemctl status sysper.service
 ```
 
 <br>
