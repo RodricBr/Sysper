@@ -8,8 +8,6 @@
 
 <hr>
 
----
-
 ## - Instalation <br>
 
 ```bash
