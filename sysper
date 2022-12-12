@@ -18,4 +18,4 @@ echo -e "+ ${GREEN_}Starting the process...${FIM_}\n"
 systemctl enable sysperd.service &>/dev/null && systemctl start sysperd / &>/dev/null
 echo -e "+ ${GREEN_}Created link:${FIM_} /etc/systemd/system/multi-user.target.wants/sysperd.service → /etc/systemd/system/sysperd.service\n"
 
-echo -e "+ ${GREEN_}Completed\nExiting...${FIM_}"
+echo -e "+ ${GREEN_}Completed\nExiting...${FIM_}" && exit 0
