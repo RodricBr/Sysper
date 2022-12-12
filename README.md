@@ -3,6 +3,12 @@
 <h4 align="center"><strong>Systemd (Daemon) Persistence</strong></h4>
 
 <p align="center">
+  <img border="0" src="./assets/demon.png" alt="demon">
+</p>
+
+---
+
+<p align="center">
   <kbd>
     <img border="0" src="./assets/sysper.png" alt="sysper example">
   </kbd>
