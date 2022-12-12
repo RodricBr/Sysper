@@ -20,10 +20,11 @@ $ sudo ./sysper
 
 ## - Reseting <br>
 ```console
-$ sudo rm /etc/systemd/system/sysper.service
+$ sudo rm /etc/systemd/system/sysperd.service
+$ sudo rm /etc/systemd/system/multi-user.target.wants/sysperd.service
 $ sudo systemctl daemon-reload
 
-$ systemctl status sysper.service
+$ systemctl status sysperd.service
 ```
 
 <br>
