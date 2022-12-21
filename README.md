@@ -34,4 +34,4 @@ $ systemctl status sysperd.service
 <br>
 
 > Inspiration: https://pberba.github.io/security/2022/01/30/linux-threat-hunting-for-persistence-systemd-timers-cron/ <br>
-> PS: This repository will be subject to drastic changes in the future. I'll make it more complex and more persistent.
+> **PS**: This repository will be subject to drastic changes in the future. I'll make it more complex and more persistent.
